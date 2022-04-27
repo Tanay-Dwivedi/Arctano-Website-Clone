@@ -61,7 +61,7 @@ class padding_three extends StatelessWidget {
     return Padding(
       padding: EdgeInsets.all(pad),
       child: Text(
-        'EXPECT THE BEST FROM US',
+        text,
         style: TextStyle(
           fontSize: fs,
           fontWeight: fw,
@@ -72,7 +72,13 @@ class padding_three extends StatelessWidget {
 }
 
 class padding_four extends StatelessWidget {
-  padding_four({required this.col, required this.fs, required this.hpad, required this.ta, required this.text, required this.vpad});
+  padding_four(
+      {required this.col,
+      required this.fs,
+      required this.hpad,
+      required this.ta,
+      required this.text,
+      required this.vpad});
 
   final String text;
   final TextAlign ta;
@@ -83,11 +89,42 @@ class padding_four extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: EdgeInsets.symmetric(horizontal: hpad, vertical: vpad),
-      child: Text( text,
+      child: Text(
+        text,
         textAlign: ta,
         style: TextStyle(
           fontSize: fs,
           color: col,
+        ),
+      ),
+    );
+  }
+}
+
+class padding_five extends StatelessWidget {
+  padding_five({
+    required this.text,
+    required this.fs,
+    required this.fw,
+    required this.pad,
+    required this.ta,
+  });
+
+  final String text;
+  final double fs, pad;
+  final FontWeight fw;
+  final TextAlign ta;
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: EdgeInsets.all(pad),
+      child: Text(
+        text,
+        textAlign: ta,
+        style: TextStyle(
+          fontSize: fs,
+          fontWeight: fw,
         ),
       ),
     );

@@ -1,3 +1,4 @@
+import 'package:arctano_website/pages/widgets/boxes.dart';
 import 'package:arctano_website/pages/widgets/padding_work.dart';
 import 'package:arctano_website/pages/widgets/texts.dart';
 import 'package:flutter/material.dart';
@@ -226,61 +227,36 @@ class MyApp extends StatelessWidget {
                           ],
                         ),
                       ),
-                      const Padding(
-                        padding: EdgeInsets.all(8.0),
-                        child: Text(
-                          'Noise Mappings',
-                          textAlign: TextAlign.center,
-                          style: TextStyle(
-                            fontSize: 14,
-                            fontWeight: FontWeight.w500,
-                          ),
-                        ),
-                      ),
-                      const Padding(
-                        padding: EdgeInsets.all(8.0),
-                        child: Text(
-                          'Machinery Noise Analysis',
-                          textAlign: TextAlign.center,
-                          style: TextStyle(
-                            fontSize: 14,
-                            fontWeight: FontWeight.w500,
-                          ),
-                        ),
-                      ),
-                      const Padding(
-                        padding: EdgeInsets.all(8.0),
-                        child: Text(
-                          'Room Acoustics',
-                          textAlign: TextAlign.center,
-                          style: TextStyle(
-                            fontSize: 14,
-                            fontWeight: FontWeight.w500,
-                          ),
-                        ),
-                      ),
-                      const Padding(
-                        padding: EdgeInsets.all(8.0),
-                        child: Text(
-                          'STC and NRC measurement',
-                          textAlign: TextAlign.center,
-                          style: TextStyle(
-                            fontSize: 14,
-                            fontWeight: FontWeight.w500,
-                          ),
-                        ),
-                      ),
-                      const Padding(
-                        padding: EdgeInsets.all(8.0),
-                        child: Text(
-                          'Spectrum Analysis',
-                          textAlign: TextAlign.center,
-                          style: TextStyle(
-                            fontSize: 14,
-                            fontWeight: FontWeight.w500,
-                          ),
-                        ),
-                      ),
+                      padding_five(
+                          text: 'Noise Mappings',
+                          fs: 14,
+                          fw: FontWeight.w500,
+                          pad: 8,
+                          ta: TextAlign.center),
+                      padding_five(
+                          text: 'Machinery Noise Analysis',
+                          fs: 14,
+                          fw: FontWeight.w500,
+                          pad: 8,
+                          ta: TextAlign.center),
+                      padding_five(
+                          text: 'Room Acoustics',
+                          fs: 14,
+                          fw: FontWeight.w500,
+                          pad: 8,
+                          ta: TextAlign.center),
+                      padding_five(
+                          text: 'STC and NRC measurement',
+                          fs: 14,
+                          fw: FontWeight.w500,
+                          pad: 8,
+                          ta: TextAlign.center),
+                      padding_five(
+                          text: 'Spectrum Analysis',
+                          fs: 14,
+                          fw: FontWeight.w500,
+                          pad: 8,
+                          ta: TextAlign.center),
                     ],
                   ),
                   Padding(
@@ -296,75 +272,45 @@ class MyApp extends StatelessWidget {
                         padding: const EdgeInsets.all(15),
                         child: Row(
                           children: <Widget>[
-                            const Padding(
-                              padding: EdgeInsets.all(15),
-                              child: Text(
-                                'VIBRATION',
-                                style: TextStyle(
-                                  fontSize: 40,
-                                  fontWeight: FontWeight.bold,
-                                ),
-                              ),
-                            ),
+                            padding_three(
+                                text: 'VIBRATION',
+                                fs: 40,
+                                fw: FontWeight.bold,
+                                pad: 15),
                             Image.asset('assets/bars.png'),
                           ],
                         ),
                       ),
-                      const Padding(
-                        padding: EdgeInsets.all(8.0),
-                        child: Text(
-                          'Condition Monitoring',
-                          textAlign: TextAlign.center,
-                          style: TextStyle(
-                            fontSize: 14,
-                            fontWeight: FontWeight.w500,
-                          ),
-                        ),
-                      ),
-                      const Padding(
-                        padding: EdgeInsets.all(8.0),
-                        child: Text(
-                          'FRF Mesurement',
-                          textAlign: TextAlign.center,
-                          style: TextStyle(
-                            fontSize: 14,
-                            fontWeight: FontWeight.w500,
-                          ),
-                        ),
-                      ),
-                      const Padding(
-                        padding: EdgeInsets.all(8.0),
-                        child: Text(
-                          'Modal Analysis',
-                          textAlign: TextAlign.center,
-                          style: TextStyle(
-                            fontSize: 14,
-                            fontWeight: FontWeight.w500,
-                          ),
-                        ),
-                      ),
-                      const Padding(
-                        padding: EdgeInsets.all(8.0),
-                        child: Text(
-                          'Single/Two Plane Balancing',
-                          textAlign: TextAlign.center,
-                          style: TextStyle(
-                            fontSize: 14,
-                            fontWeight: FontWeight.w500,
-                          ),
-                        ),
-                      ),
-                      const Padding(
-                        padding: EdgeInsets.all(8.0),
-                        child: Text(
-                          'Risk Assessment',
-                          textAlign: TextAlign.center,
-                          style: TextStyle(
-                            fontSize: 14,
-                            fontWeight: FontWeight.w500,
-                          ),
-                        ),
-                      ),
+                      padding_five(
+                          text: 'Condition Monitoring',
+                          fs: 14,
+                          fw: FontWeight.w500,
+                          pad: 8,
+                          ta: TextAlign.center),
+                      padding_five(
+                          text: 'FRF Mesurement',
+                          fs: 14,
+                          fw: FontWeight.w500,
+                          pad: 8,
+                          ta: TextAlign.center),
+                      padding_five(
+                          text: 'Modal Analysis',
+                          fs: 14,
+                          fw: FontWeight.w500,
+                          pad: 8,
+                          ta: TextAlign.center),
+                      padding_five(
+                          text: 'Single/Two Plane Balancing',
+                          fs: 14,
+                          fw: FontWeight.w500,
+                          pad: 8,
+                          ta: TextAlign.center),
+                      padding_five(
+                          text: 'Risk Assessment',
+                          fs: 14,
+                          fw: FontWeight.w500,
+                          pad: 8,
+                          ta: TextAlign.center),
                     ],
                   ),
                 ],
@@ -398,28 +344,16 @@ class MyApp extends StatelessWidget {
                           ],
                         ),
                       ),
-                      const Padding(
-                        padding: EdgeInsets.all(8.0),
-                        child: Text(
-                          'Real Time continuous monitoring',
-                          textAlign: TextAlign.center,
-                          style: TextStyle(
-                            fontSize: 14,
-                            fontWeight: FontWeight.w500,
-                          ),
-                        ),
-                      ),
-                      const Padding(
-                        padding: EdgeInsets.all(8.0),
-                        child: Text(
-                          'IOT based monitoring',
-                          textAlign: TextAlign.center,
-                          style: TextStyle(
-                            fontSize: 14,
-                            fontWeight: FontWeight.w500,
-                          ),
-                        ),
-                      ),
+                      padding_three(
+                          text: 'Real Time continuous monitoring',
+                          fs: 14,
+                          fw: FontWeight.w500,
+                          pad: 8),
+                      padding_three(
+                          text: 'IOT based monitoring',
+                          fs: 14,
+                          fw: FontWeight.w500,
+                          pad: 8),
                       const Padding(
                         padding: EdgeInsets.fromLTRB(0, 8, 0, 0),
                         child: Text(
@@ -431,14 +365,11 @@ class MyApp extends StatelessWidget {
                           ),
                         ),
                       ),
-                      const Text(
-                        '(Channel count, sensor type etc)',
-                        textAlign: TextAlign.center,
-                        style: TextStyle(
-                          fontSize: 14,
-                          fontWeight: FontWeight.w500,
-                        ),
-                      ),
+                      padding_three(
+                          text: '(Channel count, sensor type etc)',
+                          fs: 14,
+                          fw: FontWeight.w500,
+                          pad: 8),
                       const Padding(
                         padding: EdgeInsets.fromLTRB(0, 8, 0, 0),
                         child: Text(
@@ -450,14 +381,11 @@ class MyApp extends StatelessWidget {
                           ),
                         ),
                       ),
-                      const Text(
-                        '(On-board / Cloud based / Base station)',
-                        textAlign: TextAlign.center,
-                        style: TextStyle(
-                          fontSize: 14,
-                          fontWeight: FontWeight.w500,
-                        ),
-                      ),
+                      padding_three(
+                          text: '(On-board / Cloud based / Base station)',
+                          fs: 14,
+                          fw: FontWeight.w500,
+                          pad: 8),
                     ],
                   ),
                   Padding(
@@ -489,66 +417,47 @@ class MyApp extends StatelessWidget {
                                 ],
                               ),
                             ),
-                            const Padding(
-                              padding: EdgeInsets.all(8.0),
-                              child: Text(
-                                'Detailed Survey of site',
-                                textAlign: TextAlign.center,
-                                style: TextStyle(
-                                  fontSize: 14,
-                                  fontWeight: FontWeight.w500,
-                                ),
-                              ),
-                            ),
-                            const Padding(
-                              padding: EdgeInsets.all(8.0),
-                              child: Text(
-                                'Instrumentation setup designing',
-                                textAlign: TextAlign.center,
-                                style: TextStyle(
-                                  fontSize: 14,
-                                  fontWeight: FontWeight.w500,
-                                ),
-                              ),
-                            ),
-                            const Padding(
-                              padding: EdgeInsets.fromLTRB(0, 8, 0, 0),
-                              child: Text(
-                                'Selection of suitable Materials',
-                                textAlign: TextAlign.center,
-                                style: TextStyle(
-                                  fontSize: 14,
-                                  fontWeight: FontWeight.w500,
-                                ),
-                              ),
-                            ),
-                            const Text(
-                              'End-to-end Installation',
-                              textAlign: TextAlign.center,
-                              style: TextStyle(
-                                fontSize: 14,
-                                fontWeight: FontWeight.w500,
-                              ),
-                            ),
-                            const Padding(
-                              padding: EdgeInsets.fromLTRB(0, 8, 0, 0),
-                              child: Text(
-                                'Long-term Maintenance',
-                                textAlign: TextAlign.center,
-                                style: TextStyle(
-                                  fontSize: 14,
-                                  fontWeight: FontWeight.w500,
-                                ),
-                              ),
-                            ),
-                            const Text(
-                              'Excellent After Sale services',
-                              textAlign: TextAlign.center,
-                              style: TextStyle(
-                                fontSize: 14,
-                                fontWeight: FontWeight.w500,
-                              ),
-                            ),
+                            // const Padding(
+                            //   padding: EdgeInsets.all(8.0),
+                            //   child: Text(
+                            //     'Detailed Survey of site',
+                            //     textAlign: TextAlign.center,
+                            //     style: TextStyle(
+                            //       fontSize: 14,
+                            //       fontWeight: FontWeight.w500,
+                            //     ),
+                            //   ),
+                            // ),
+                            padding_three(
+                                text: 'Detailed Survey of site',
+                                fs: 14,
+                                fw: FontWeight.w500,
+                                pad: 8),
+                            padding_three(
+                                text: 'Instrumentation setup designing',
+                                fs: 14,
+                                fw: FontWeight.w500,
+                                pad: 8),
+                            padding_three(
+                                text: 'Selection of suitable Materials',
+                                fs: 14,
+                                fw: FontWeight.w500,
+                                pad: 8),
+                            padding_three(
+                                text: 'End-to-end Installation',
+                                fs: 14,
+                                fw: FontWeight.w500,
+                                pad: 8),
+                            padding_three(
+                                text: 'Long-term Maintenance',
+                                fs: 14,
+                                fw: FontWeight.w500,
+                                pad: 8),
+                            padding_three(
+                                text: 'Excellent After Sale services',
+                                fs: 14,
+                                fw: FontWeight.w500,
+                                pad: 8),
                           ],
                         ),
                       ],
@@ -557,28 +466,15 @@ class MyApp extends StatelessWidget {
                 ],
               ),
             ),
-            const Padding(
-              padding: EdgeInsets.all(8.0),
-              child: Text(
-                'OUR PRODUCTS',
-                style: TextStyle(
-                  fontSize: 40,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Text(
-                'AN EXPERIENCE LIKE NEVER BEFORE',
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                  fontSize: 30,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.indigo[900],
-                ),
-              ),
-            ),
+            padding_three(
+                text: 'OUR PRODUCTS', fs: 40, fw: FontWeight.bold, pad: 8),
+            padding_four(
+                col: Colors.indigo.shade900,
+                fs: 30,
+                hpad: 8,
+                ta: TextAlign.center,
+                text: 'AN EXPERIENCE LIKE NEVER BEFORE',
+                vpad: 8),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 50, vertical: 25),
               child: Image.asset(
@@ -589,180 +485,27 @@ class MyApp extends StatelessWidget {
             const SizedBox(
               height: 7,
             ),
-            Padding(
-              padding: const EdgeInsets.all(20),
-              child: Container(
-                height: 350,
-                decoration: BoxDecoration(
-                  color: Colors.grey[100],
-                  borderRadius: BorderRadius.circular(25),
-                  boxShadow: const [
-                    BoxShadow(
-                      color: Colors.black26,
-                      offset: Offset(5, 5),
-                    ),
-                  ],
-                ),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: <Widget>[
-                    Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: const <Widget>[
-                        Text(
-                          'SOUND ANALYZERS',
-                          style: TextStyle(
-                            fontSize: 40,
-                            fontWeight: FontWeight.bold,
-                            color: Colors.black45,
-                          ),
-                        ),
-                        Padding(
-                          padding: EdgeInsets.all(20),
-                          child: SizedBox(
-                            width: 700,
-                            child: Text(
-                              'High Dynamic range with parallel time and frequency domain computations',
-                              textAlign: TextAlign.center,
-                              style: TextStyle(
-                                fontSize: 30,
-                                color: Colors.black38,
-                                fontWeight: FontWeight.w500,
-                              ),
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.all(20),
-                      child: Image.asset(
-                        'assets/slm.jpg',
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ),
+            boxes_one(
+                txt1: 'SOUND ANALYZERS',
+                txt2:
+                    'High Dynamic range with parallel time and frequency domain computations',
+                txt3: 'assets/slm.jpg'),
             const SizedBox(
               height: 7,
             ),
-            Padding(
-              padding: const EdgeInsets.all(20),
-              child: Container(
-                height: 350,
-                decoration: BoxDecoration(
-                  color: Colors.grey[100],
-                  borderRadius: BorderRadius.circular(25),
-                  boxShadow: const [
-                    BoxShadow(
-                      color: Colors.black26,
-                      offset: Offset(5, 5),
-                    ),
-                  ],
-                ),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.all(10),
-                      child: Image.asset(
-                        'assets/dataLogger.jpg',
-                        width: 600,
-                      ),
-                    ),
-                    Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: const <Widget>[
-                        Text(
-                          'DATA LOGGERS',
-                          style: TextStyle(
-                            fontSize: 40,
-                            fontWeight: FontWeight.bold,
-                            color: Colors.black45,
-                          ),
-                        ),
-                        Padding(
-                          padding: EdgeInsets.all(10),
-                          child: SizedBox(
-                            width: 700,
-                            child: Text(
-                              'Multi-channel data acquisition with flexible configurations.',
-                              textAlign: TextAlign.center,
-                              style: TextStyle(
-                                fontSize: 30,
-                                color: Colors.black38,
-                                fontWeight: FontWeight.w500,
-                              ),
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ],
-                ),
-              ),
-            ),
+            boxes_one(
+                txt1: 'DATA LOGGERS',
+                txt2:
+                    'Multi-channel data acquisition with flexible configurations.',
+                txt3: 'assets/dataLogger.jpg'),
             const SizedBox(
               height: 7,
             ),
-            Padding(
-              padding: const EdgeInsets.all(20),
-              child: Container(
-                height: 350,
-                decoration: BoxDecoration(
-                  color: Colors.grey[100],
-                  borderRadius: BorderRadius.circular(25),
-                  boxShadow: const [
-                    BoxShadow(
-                      color: Colors.black26,
-                      offset: Offset(5, 5),
-                    ),
-                  ],
-                ),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: <Widget>[
-                    Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: const <Widget>[
-                        Text(
-                          'VIBRATION ANALYZERS',
-                          style: TextStyle(
-                            fontSize: 40,
-                            fontWeight: FontWeight.bold,
-                            color: Colors.black45,
-                          ),
-                        ),
-                        Padding(
-                          padding: EdgeInsets.all(20),
-                          child: SizedBox(
-                            width: 700,
-                            child: Text(
-                              'Real-time FFT and Octave analysis with interactive graphs',
-                              textAlign: TextAlign.center,
-                              style: TextStyle(
-                                fontSize: 30,
-                                color: Colors.black38,
-                                fontWeight: FontWeight.w500,
-                              ),
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.all(10),
-                      child: Image.asset(
-                        'assets/vibration.jpg',
-                        width: 600,
-                        height: 400,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ),
+            boxes_one(
+                txt1: 'VIBRATION ANALYZERS',
+                txt2:
+                    'Real-time FFT and Octave analysis with interactive graphs',
+                txt3: 'assets/vibration.jpg'),
             const SizedBox(
               height: 10,
             ),
