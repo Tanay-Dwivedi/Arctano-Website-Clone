@@ -1,4 +1,5 @@
 import 'package:arctano_website/pages/widgets/boxes.dart';
+import 'package:arctano_website/pages/widgets/form.dart';
 import 'package:arctano_website/pages/widgets/padding_work.dart';
 import 'package:arctano_website/pages/widgets/texts.dart';
 import 'package:flutter/material.dart';
@@ -509,38 +510,16 @@ class MyApp extends StatelessWidget {
             const SizedBox(
               height: 10,
             ),
-            const SizedBox(
+            SizedBox(
               width: 275,
-              child: Text(
-                'Subscribe to our latest updates',
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                  fontSize: 30,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.black54,
-                ),
-              ),
+              child: text_one(
+                  fs: 30,
+                  fw: FontWeight.bold,
+                  ta: TextAlign.center,
+                  text: 'Subscribe to our latest updates',
+                  col: Colors.black54),
             ),
-            Padding(
-              padding: const EdgeInsets.all(10),
-              child: Container(
-                width: 500,
-                decoration: BoxDecoration(
-                    color: Colors.grey[200],
-                    border: Border.all(
-                      color: Colors.grey.shade300,
-                    )),
-                child: const Padding(
-                  padding: EdgeInsets.all(4.0),
-                  child: TextField(
-                    decoration: InputDecoration(
-                      hintText: 'Enter email',
-                      border: InputBorder.none,
-                    ),
-                  ),
-                ),
-              ),
-            ),
+            form_one(h: 50, text: 'Enter email', w: 500),
             buttons_one(rad: 25, h: 50, w: 200),
             Container(
               height: 1050,
@@ -576,169 +555,29 @@ class MyApp extends StatelessWidget {
                       ),
                     ),
                   ),
-                  Padding(
-                    padding: const EdgeInsets.all(10),
-                    child: Container(
-                      width: 400,
-                      height: 50,
-                      decoration: BoxDecoration(
-                          color: Colors.grey[200],
-                          border: Border.all(
-                            color: Colors.grey.shade300,
-                          )),
-                      child: const Padding(
-                        padding: EdgeInsets.fromLTRB(25, 5, 5, 5),
-                        child: TextField(
-                            decoration: InputDecoration(
-                                hintText: 'Enter full name',
-                                border: InputBorder.none)),
-                      ),
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.all(10),
-                    child: Container(
-                      width: 400,
-                      height: 50,
-                      decoration: BoxDecoration(
-                          color: Colors.grey[200],
-                          border: Border.all(
-                            color: Colors.grey.shade300,
-                          )),
-                      child: const Padding(
-                        padding: EdgeInsets.fromLTRB(25, 5, 5, 5),
-                        child: TextField(
-                            decoration: InputDecoration(
-                                hintText: 'Enter email',
-                                border: InputBorder.none)),
-                      ),
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.all(10),
-                    child: Container(
-                      width: 400,
-                      height: 50,
-                      decoration: BoxDecoration(
-                          color: Colors.grey[200],
-                          border: Border.all(
-                            color: Colors.grey.shade300,
-                          )),
-                      child: const Padding(
-                        padding: EdgeInsets.fromLTRB(25, 5, 5, 5),
-                        child: TextField(
-                            decoration: InputDecoration(
-                                hintText: 'Enter your contact number',
-                                border: InputBorder.none)),
-                      ),
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.all(10),
-                    child: Container(
-                      width: 400,
-                      height: 50,
-                      decoration: BoxDecoration(
-                          color: Colors.grey[200],
-                          border: Border.all(
-                            color: Colors.grey.shade300,
-                          )),
-                      child: const Padding(
-                        padding: EdgeInsets.fromLTRB(25, 5, 5, 5),
-                        child: TextField(
-                            decoration: InputDecoration(
-                                hintText: 'Enter your highest qualification',
-                                border: InputBorder.none)),
-                      ),
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.all(10),
-                    child: Container(
-                      width: 400,
-                      height: 50,
-                      decoration: BoxDecoration(
-                          color: Colors.grey[200],
-                          border: Border.all(
-                            color: Colors.grey.shade300,
-                          )),
-                      child: const Padding(
-                        padding: EdgeInsets.fromLTRB(25, 5, 5, 5),
-                        child: TextField(
-                            decoration: InputDecoration(
-                                hintText: 'Last company you worked for',
-                                border: InputBorder.none)),
-                      ),
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.all(10),
-                    child: Container(
-                      width: 400,
-                      height: 50,
-                      decoration: BoxDecoration(
-                          color: Colors.grey[200],
-                          border: Border.all(
-                            color: Colors.grey.shade300,
-                          )),
-                      child: const Padding(
-                        padding: EdgeInsets.fromLTRB(25, 5, 5, 5),
-                        child: TextField(
-                            decoration: InputDecoration(
-                                hintText:
-                                    'Enter your total years of experience',
-                                border: InputBorder.none)),
-                      ),
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.all(10),
-                    child: Container(
-                      width: 400,
-                      height: 175,
-                      decoration: BoxDecoration(
-                          color: Colors.grey[200],
-                          border: Border.all(
-                            color: Colors.grey.shade300,
-                          )),
-                      child: const Padding(
-                        padding: EdgeInsets.fromLTRB(25, 5, 5, 5),
-                        child: TextField(
-                            decoration: InputDecoration(
-                                hintText: 'Any refrence/comments/questions',
-                                border: InputBorder.none)),
-                      ),
-                    ),
-                  ),
+                  form_one(h: 50, text: 'Enter full name', w: 400),
+                  form_one(h: 50, text: 'Enter full name', w: 400),
+                  form_one(h: 50, text: 'Enter your contact number', w: 400),
+                  form_one(
+                      h: 50, text: 'Enter your highest qualification', w: 400),
+                  form_one(h: 50, text: 'Last company you worked for', w: 400),
+                  form_one(
+                      h: 50,
+                      text: 'Enter your total years of experience',
+                      w: 400),
+                  form_one(
+                      h: 175, text: 'Any refrence/comments/questions', w: 400),
                   const SizedBox(
                     height: 20,
                   ),
-                  const Text(
-                    'Attach resume',
-                    style: TextStyle(
-                      fontSize: 20,
-                      fontWeight: FontWeight.w600,
-                      color: Colors.white,
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.all(10),
-                    child: Container(
-                      width: 400,
-                      decoration: BoxDecoration(
-                          color: Colors.grey[200],
-                          border: Border.all(
-                            color: Colors.grey.shade300,
-                          )),
-                      child: const Padding(
-                        padding: EdgeInsets.fromLTRB(25, 5, 5, 5),
-                        child: TextField(
-                            decoration: InputDecoration(
-                                hintText: 'Any refrence/comments/questions',
-                                border: InputBorder.none)),
-                      ),
-                    ),
-                  ),
+                  text_one(
+                      fs: 20,
+                      fw: FontWeight.bold,
+                      ta: TextAlign.center,
+                      text: 'Attach resume',
+                      col: Colors.white),
+                  form_one(
+                      h: 50, text: 'Any refrence/comments/questions', w: 400),
                   buttons_one(rad: 25, h: 50, w: 200),
                 ],
               ),
@@ -751,25 +590,32 @@ class MyApp extends StatelessWidget {
               ),
               child: Column(
                 children: <Widget>[
-                  const Padding(
-                    padding: EdgeInsets.symmetric(horizontal: 20, vertical: 75),
-                    child: Text(
-                      'Contact Us',
-                      style: TextStyle(
-                        fontSize: 40,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.white,
-                      ),
-                    ),
-                  ),
+                  // const Padding(
+                  //   padding: EdgeInsets.symmetric(horizontal: 20, vertical: 75),
+                  //   child: Text(
+                  //     'Contact Us',
+                  //     style: TextStyle(
+                  //       fontSize: 40,
+                  //       fontWeight: FontWeight.bold,
+                  //       color: Colors.white,
+                  //     ),
+                  //   ),
+                  // ),
+                  padding_four(
+                      col: Colors.white,
+                      fs: 40,
+                      hpad: 20,
+                      ta: TextAlign.center,
+                      text: 'Contact Us',
+                      vpad: 75),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
                       Padding(
                         padding: const EdgeInsets.all(20),
                         child: Column(
-                          children: const <Widget>[
-                            Padding(
+                          children: <Widget>[
+                            const Padding(
                               padding: EdgeInsets.all(15),
                               child: Text(
                                 'Phone',
@@ -780,22 +626,18 @@ class MyApp extends StatelessWidget {
                                 ),
                               ),
                             ),
-                            Text(
-                              '+91 8595632981',
-                              style: TextStyle(
-                                fontSize: 20,
-                                fontWeight: FontWeight.normal,
-                                color: Colors.white,
-                              ),
-                            ),
-                            Text(
-                              '+91 9711088018',
-                              style: TextStyle(
-                                fontSize: 20,
-                                fontWeight: FontWeight.normal,
-                                color: Colors.white,
-                              ),
-                            ),
+                            text_one(
+                                fs: 20,
+                                fw: FontWeight.normal,
+                                ta: TextAlign.center,
+                                text: '+91 8595632981',
+                                col: Colors.white),
+                            text_one(
+                                fs: 20,
+                                fw: FontWeight.normal,
+                                ta: TextAlign.center,
+                                text: '+91 9711088018',
+                                col: Colors.white),
                           ],
                         ),
                       ),
