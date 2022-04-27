@@ -24,6 +24,8 @@ dependencies:
   flutter:
     sdk: flutter
   google_fonts: ^2.3.1
+  scrollable_positioned_list: ^0.2.3
+  scroll_to_index: ^2.1.1
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.

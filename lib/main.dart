@@ -9,14 +9,12 @@ import 'pages/products.dart';
 import 'pages/services.dart';
 
 void main() {
-  runApp(const MaterialApp(
+  runApp(MaterialApp(
     home: MyApp(),
   ));
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -35,29 +33,44 @@ class MyApp extends StatelessWidget {
             padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 0),
             child: Row(
               children: [
-                padding_One(text: "Home"),
-                padding_One(text: "About Us"),
-                padding_One(text: "Services"),
-                padding_One(text: "Products"),
-                padding_One(text: "Careers"),
-                padding_One(text: "Contact Us"),
+                GestureDetector(
+                  child: padding_One(text: "Home"),
+                  onTap: () {},
+                ),
+                GestureDetector(
+                  child: padding_One(text: "About Us"),
+                  onTap: () {},
+                ),
+                GestureDetector(
+                  child: padding_One(text: "Services"),
+                  onTap: () {},
+                ),
+                GestureDetector(
+                  child: padding_One(text: "Products"),
+                  onTap: () {},
+                ),
+                GestureDetector(
+                  child: padding_One(text: "Careers"),
+                  onTap: () {},
+                ),
+                GestureDetector(
+                  child: padding_One(text: "Contact Us"),
+                  onTap: () {},
+                ),
               ],
             ),
           )
         ],
       ),
-      body: SingleChildScrollView(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            home_widget(),
-            aboutUs_widget(),
-            services_widget(),
-            products_widget(),
-            carrers_widget(),
-            contactUs_widget(),
-          ],
-        ),
+      body: ListView(
+        children: [
+          home_widget(),
+          aboutUs_widget(),
+          services_widget(),
+          products_widget(),
+          carrers_widget(),
+          contactUs_widget(),
+        ],
       ),
     );
   }
