@@ -17,24 +17,25 @@ class home_widget extends StatelessWidget {
         ),
         Column(
           children: <Widget>[
-            SizedBox(
-              height: 700,
-              width: 700,
+            FittedBox(
               child: Image.asset(
                 'assets/arctanoLogoFull.png',
+                height: 1000,
               ),
             ),
-            padding_two(
-                text: 'Acoustics · Vibration · Data Logging',
-                fs: 30,
-                pad: 20,
-                col: Colors.white),
+            FittedBox(
+              child: padding_two(
+                  text: 'Acoustics · Vibration · Data Logging',
+                  fs: 125,
+                  pad: 20,
+                  col: Colors.white),
+            ),
             padding_two(
                 text: 'We are in the business, of helping yours.',
-                fs: 30,
+                fs: 125,
                 pad: 20,
                 col: Colors.white),
-            buttons_one(rad: 25, h: 50, w: 200),
+            buttons_one(rad: 75, h: 150, w: 600),
           ],
         ),
       ],

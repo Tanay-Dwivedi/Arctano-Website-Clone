@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class buttons_one extends StatelessWidget {
   buttons_one({required this.rad, required this.h, required this.w});
 
-  final double rad,h,w;
+  final double rad, h, w;
 
   @override
   Widget build(BuildContext context) {
@@ -22,10 +22,12 @@ class buttons_one extends StatelessWidget {
             ),
           ),
           onPressed: () {},
-          child: const Text(
-            'Get Started',
-            style: TextStyle(
-              fontSize: 15,
+          child: const FittedBox(
+            child: Text(
+              'Get Started',
+              style: TextStyle(
+                fontSize: 30,
+              ),
             ),
           ),
         ),

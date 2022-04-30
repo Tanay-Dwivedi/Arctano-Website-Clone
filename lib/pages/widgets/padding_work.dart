@@ -6,12 +6,10 @@ class padding_One extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(10),
+    return FittedBox(
       child: Text(
         text,
         style: const TextStyle(
-          fontSize: 20,
           color: Colors.white,
         ),
       ),
@@ -31,13 +29,15 @@ class padding_two extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: EdgeInsets.all(pad),
-      child: Text(
-        text,
-        style: TextStyle(
-          color: col,
-          fontSize: fs,
+    return FittedBox(
+      child: Padding(
+        padding: EdgeInsets.all(pad),
+        child: Text(
+          text,
+          style: TextStyle(
+            color: col,
+            fontSize: fs,
+          ),
         ),
       ),
     );
@@ -58,13 +58,15 @@ class padding_three extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: EdgeInsets.all(pad),
-      child: Text(
-        text,
-        style: TextStyle(
-          fontSize: fs,
-          fontWeight: fw,
+    return FittedBox(
+      child: Padding(
+        padding: EdgeInsets.all(pad),
+        child: Text(
+          text,
+          style: TextStyle(
+            fontSize: fs,
+            fontWeight: fw,
+          ),
         ),
       ),
     );
@@ -87,14 +89,16 @@ class padding_four extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: EdgeInsets.symmetric(horizontal: hpad, vertical: vpad),
-      child: Text(
-        text,
-        textAlign: ta,
-        style: TextStyle(
-          fontSize: fs,
-          color: col,
+    return FittedBox(
+      child: Padding(
+        padding: EdgeInsets.symmetric(horizontal: hpad, vertical: vpad),
+        child: Text(
+          text,
+          textAlign: ta,
+          style: TextStyle(
+            fontSize: fs,
+            color: col,
+          ),
         ),
       ),
     );
@@ -117,14 +121,16 @@ class padding_five extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: EdgeInsets.all(pad),
-      child: Text(
-        text,
-        textAlign: ta,
-        style: TextStyle(
-          fontSize: fs,
-          fontWeight: fw,
+    return FittedBox(
+      child: Padding(
+        padding: EdgeInsets.all(pad),
+        child: Text(
+          text,
+          textAlign: ta,
+          style: TextStyle(
+            fontSize: fs,
+            fontWeight: fw,
+          ),
         ),
       ),
     );
