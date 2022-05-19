@@ -17,11 +17,9 @@ class home_widget extends StatelessWidget {
         ),
         Column(
           children: <Widget>[
-            FittedBox(
-              child: Image.asset(
-                'assets/arctanoLogoFull.png',
-                height: 1000,
-              ),
+            Image.asset(
+              'assets/arctanoLogoFull.png',
+              height: 400,
             ),
             FittedBox(
               child: padding_two(
