@@ -5,6 +5,8 @@ import 'package:arctano_website/pages/widgets/texts.dart';
 import 'package:arctano_website/pages/widgets/buttons.dart';
 
 class contactUs_widget extends StatelessWidget {
+  const contactUs_widget({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -17,7 +19,7 @@ class contactUs_widget extends StatelessWidget {
           ),
           child: Column(
             children: <Widget>[
-              padding_four(
+              const padding_four(
                   col: Colors.white,
                   fs: 40,
                   hpad: 20,
@@ -31,8 +33,8 @@ class contactUs_widget extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.all(20),
                       child: Column(
-                        children: <Widget>[
-                          const Padding(
+                        children: const <Widget>[
+                          Padding(
                             padding: EdgeInsets.all(15),
                             child: Text(
                               'Phone',
@@ -64,7 +66,7 @@ class contactUs_widget extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.all(20),
                       child: Column(
-                        children: <Widget>[
+                        children: const <Widget>[
                           Padding(
                             padding: EdgeInsets.all(15),
                             child: text_one(
@@ -89,9 +91,9 @@ class contactUs_widget extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.all(20),
                       child: Column(
-                        children: <Widget>[
+                        children: const <Widget>[
                           Padding(
-                            padding: const EdgeInsets.all(15),
+                            padding: EdgeInsets.all(15),
                             child: text_one(
                                 fs: 20,
                                 fw: FontWeight.normal,
@@ -126,18 +128,18 @@ class contactUs_widget extends StatelessWidget {
               const SizedBox(
                 height: 75,
               ),
-              text_one(
+              const text_one(
                   fs: 20,
                   fw: FontWeight.normal,
                   ta: TextAlign.center,
                   text: 'or Share your details',
                   col: Colors.white),
-              form_one(h: 50, text: 'Enter full name', w: 400),
-              form_one(h: 50, text: 'Enter email', w: 400),
-              form_one(h: 50, text: 'Enter your contact no.', w: 400),
-              form_one(h: 50, text: 'organisation name', w: 400),
-              form_one(h: 175, text: 'Any refrence/comments/questions', w: 400),
-              buttons_one(rad: 25, h: 50, w: 200),
+              const form_one(h: 50, text: 'Enter full name', w: 400),
+              const form_one(h: 50, text: 'Enter email', w: 400),
+              const form_one(h: 50, text: 'Enter your contact no.', w: 400),
+              const form_one(h: 50, text: 'organisation name', w: 400),
+              const form_one(h: 175, text: 'Any refrence/comments/questions', w: 400),
+              const buttons_one(rad: 25, h: 50, w: 200),
             ],
           ),
         ),

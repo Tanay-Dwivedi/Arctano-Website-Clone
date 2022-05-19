@@ -1,5 +1,4 @@
 import 'package:arctano_website/pages/widgets/padding_work.dart';
-import 'package:arctano_website/pages/widgets/texts.dart';
 import 'package:flutter/material.dart';
 import 'package:scrollable_positioned_list/scrollable_positioned_list.dart';
 import 'pages/widgets/padding_work.dart';
@@ -12,13 +11,15 @@ import 'pages/services.dart';
 
 void main() {
   runApp(
-    MaterialApp(
+    const MaterialApp(
       home: MyApp(),
     ),
   );
 }
 
 class MyApp extends StatefulWidget {
+  const MyApp({Key? key}) : super(key: key);
+
   @override
   State<MyApp> createState() => _MyAppState();
 }
@@ -30,21 +31,21 @@ class _MyAppState extends State<MyApp> {
   static const Duration du = Duration(seconds: 2);
   late final List<Widget> nl;
   static const List<String> txt = [
-      'Home',
-      'About Us',
-      'Services',
-      'Products',
-      'Careers',
-      'Contact Us'
-    ];
-    final List<Widget> wl = [
-      FittedBox(child: home_widget()),
-      FittedBox(child: aboutUs_widget()),
-      FittedBox(child: services_widget()),
-      FittedBox(child: products_widget()),
-      FittedBox(child: carrers_widget()),
-      FittedBox(child: contactUs_widget())
-    ];
+    'Home',
+    'About Us',
+    'Services',
+    'Products',
+    'Careers',
+    'Contact Us'
+  ];
+  final List<Widget> wl = [
+    const FittedBox(child: home_widget()),
+    const FittedBox(child: aboutUs_widget()),
+    const FittedBox(child: services_widget()),
+    const FittedBox(child: products_widget()),
+    const FittedBox(child: carrers_widget()),
+    const FittedBox(child: contactUs_widget())
+  ];
 
   @override
   void initState() {
@@ -62,7 +63,6 @@ class _MyAppState extends State<MyApp> {
 
   @override
   Widget build(BuildContext context) {
-
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.black,
@@ -97,7 +97,8 @@ class _MyAppState extends State<MyApp> {
 }
 
 class getDec extends StatelessWidget {
-  getDec({required this.text, required this.onTap2});
+  const getDec({Key? key, required this.text, required this.onTap2})
+      : super(key: key);
 
   final String text;
   final Function onTap2;

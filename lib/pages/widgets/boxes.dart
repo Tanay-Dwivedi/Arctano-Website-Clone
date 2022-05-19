@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
 class boxes_one extends StatelessWidget {
-  boxes_one({
+  const boxes_one({Key? key, 
     required this.txt1,
     required this.txt2,
     required this.txt3,
-  });
+  }) : super(key: key);
 
   final String txt1, txt2, txt3;
 

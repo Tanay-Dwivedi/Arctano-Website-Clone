@@ -4,6 +4,8 @@ import 'package:arctano_website/pages/widgets/texts.dart';
 import 'package:arctano_website/pages/widgets/buttons.dart';
 
 class carrers_widget extends StatelessWidget {
+  const carrers_widget({Key? key}) : super(key: key);
+
 
   @override
   Widget build(BuildContext context) {
@@ -16,8 +18,8 @@ class carrers_widget extends StatelessWidget {
                 color: Colors.indigo[400],
               ),
               child: Column(
-                children: <Widget>[
-                  const Padding(
+                children: const <Widget>[
+                  Padding(
                     padding: EdgeInsets.fromLTRB(0, 75, 0, 20),
                     child: Text(
                       'CAREERS',
@@ -28,7 +30,7 @@ class carrers_widget extends StatelessWidget {
                       ),
                     ),
                   ),
-                  const Padding(
+                  Padding(
                     padding: EdgeInsets.all(15),
                     child: SizedBox(
                       width: 1200,
@@ -55,7 +57,7 @@ class carrers_widget extends StatelessWidget {
                       w: 400),
                   form_one(
                       h: 175, text: 'Any refrence/comments/questions', w: 400),
-                  const SizedBox(
+                  SizedBox(
                     height: 20,
                   ),
                   text_one(

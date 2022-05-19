@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
 class text_one extends StatelessWidget {
-  text_one(
-      {required this.fs,
+  const text_one(
+      {Key? key, required this.fs,
       required this.fw,
       required this.ta,
-      required this.text, required this.col});
+      required this.text, required this.col}) : super(key: key);
 
   final String text;
   final double fs;

@@ -3,11 +3,13 @@ import 'package:arctano_website/pages/widgets/padding_work.dart';
 import 'package:arctano_website/pages/widgets/texts.dart';
 
 class aboutUs_widget extends StatelessWidget {
+  const aboutUs_widget({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Column(
       children: <Widget>[
-        padding_three(
+        const padding_three(
             text: 'EXPECT THE BEST FROM US',
             fs: 40,
             fw: FontWeight.w900,
@@ -31,7 +33,7 @@ class aboutUs_widget extends StatelessWidget {
                         height: 250,
                         width: 250,
                       ),
-                      padding_three(
+                      const padding_three(
                           text: 'HOW IT ALL STARTED',
                           fs: 20,
                           fw: FontWeight.w700,
@@ -61,7 +63,7 @@ class aboutUs_widget extends StatelessWidget {
                         height: 250,
                         width: 250,
                       ),
-                      padding_three(
+                      const padding_three(
                           text: 'WHAT WE OFFER',
                           fs: 20,
                           fw: FontWeight.w700,
@@ -91,7 +93,7 @@ class aboutUs_widget extends StatelessWidget {
                         height: 250,
                         width: 250,
                       ),
-                      padding_three(
+                      const padding_three(
                           text: 'OUR SKILLED TEAM',
                           fs: 20,
                           fw: FontWeight.w700,

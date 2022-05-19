@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
 class form_one extends StatelessWidget {
-  form_one({
+  const form_one({Key? key, 
     required this.h,
     required this.text,
     required this.w,
-  });
+  }) : super(key: key);
 
   final double w, h;
   final String text;

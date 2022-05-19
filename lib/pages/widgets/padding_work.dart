@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 
 class padding_One extends StatelessWidget {
-  padding_One({required this.text});
+  const padding_One({Key? key, required this.text}) : super(key: key);
+
+  
   final String text;
 
   @override
@@ -18,11 +20,11 @@ class padding_One extends StatelessWidget {
 }
 
 class padding_two extends StatelessWidget {
-  padding_two(
-      {required this.text,
+  const padding_two(
+      {Key? key, required this.text,
       required this.fs,
       required this.pad,
-      required this.col});
+      required this.col}) : super(key: key);
   final String text;
   final double pad, fs;
   final Color col;
@@ -45,12 +47,12 @@ class padding_two extends StatelessWidget {
 }
 
 class padding_three extends StatelessWidget {
-  padding_three({
+  const padding_three({Key? key, 
     required this.text,
     required this.fs,
     required this.fw,
     required this.pad,
-  });
+  }) : super(key: key);
 
   final String text;
   final double fs, pad;
@@ -74,13 +76,13 @@ class padding_three extends StatelessWidget {
 }
 
 class padding_four extends StatelessWidget {
-  padding_four(
-      {required this.col,
+  const padding_four(
+      {Key? key, required this.col,
       required this.fs,
       required this.hpad,
       required this.ta,
       required this.text,
-      required this.vpad});
+      required this.vpad}) : super(key: key);
 
   final String text;
   final TextAlign ta;
@@ -106,13 +108,13 @@ class padding_four extends StatelessWidget {
 }
 
 class padding_five extends StatelessWidget {
-  padding_five({
+  const padding_five({Key? key, 
     required this.text,
     required this.fs,
     required this.fw,
     required this.pad,
     required this.ta,
-  });
+  }) : super(key: key);
 
   final String text;
   final double fs, pad;

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class buttons_one extends StatelessWidget {
-  buttons_one({required this.rad, required this.h, required this.w});
+  const buttons_one({Key? key, required this.rad, required this.h, required this.w}) : super(key: key);
 
   final double rad, h, w;
 
