@@ -25,17 +25,16 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  //final dataKey = new GlobalKey();
   final ItemScrollController itemScrollController = ItemScrollController();
 
-  static const Duration du = Duration(seconds: 2);
+  static const Duration du = Duration(milliseconds: 750);
   late final List<Widget> nl;
   static const List<String> txt = [
-    'Home',
-    'About Us',
-    'Services',
-    'Products',
-    'Careers',
+    'Home   ',
+    'About Us   ',
+    'Services   ',
+    'Products   ',
+    'Careers   ',
     'Contact Us'
   ];
   final List<Widget> wl = [
@@ -55,7 +54,12 @@ class _MyAppState extends State<MyApp> {
       (int i) => getDec(
         text: txt[i],
         onTap2: () {
-          itemScrollController.scrollTo(index: i, duration: du);
+          itemScrollController.scrollTo(
+            index: i,
+            duration: du,
+            alignment: 1,
+            curve: Curves.easeIn,
+          );
         },
       ),
     );
